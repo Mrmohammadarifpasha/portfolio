@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mohammad Arif Pasha</title>
+
+  <!-- Global & Layout CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/projects.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- ===== Header / Navbar ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Arif Pasha</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="services.html">Services</a></li>
+        </ul>
+      </ul>
+      <div class="theme-toggle">
+        <button id="themeSwitcher">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects section">
+    <div class="container">
+      <h1 class="section-title">My Projects</h1>
+      <p class="section-subtitle">Here are some of my DevOps, Cloud, and Automation projects.</p>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="devops">DevOps</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+        <button class="filter-btn" data-filter="automation">Automation</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Example Project Card -->
+        <div class="card project-card" data-category="devops">
+          <img src="assets/images/project1.png" alt="Project 1">
+          <h3>CI/CD Pipeline with Jenkins</h3>
+          <p>Automated build & deployment pipeline using Jenkins, Docker, and Kubernetes.</p>
+          <button class="btn small view-project" data-id="1">View Details</button>
+        </div>
+
+        <div class="card project-card" data-category="cloud">
+          <img src="assets/images/project2.png" alt="Project 2">
+          <h3>AWS Auto Scaling Web App</h3>
+          <p>Deployed scalable web application using EC2, Load Balancer, and Auto Scaling.</p>
+          <button class="btn small view-project" data-id="2">View Details</button>
+        </div>
+
+        <div class="card project-card" data-category="automation">
+          <img src="assets/images/project3.png" alt="Project 3">
+          <h3>Infrastructure as Code with Terraform</h3>
+          <p>Provisioned AWS infrastructure with Terraform and managed configuration using Ansible.</p>
+          <button class="btn small view-project" data-id="3">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Project Modal Popup (Hidden by default) ===== -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2 id="modalTitle">Project Title</h2>
+      <img id="modalImage" src="" alt="Project Screenshot">
+      <p id="modalDescription">Detailed project description will appear here...</p>
+      <a id="modalLink" href="#" target="_blank" class="btn primary">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 Mohammad Arif Pasha | All Rights Reserved</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a> | 
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- ===== JS Scripts ===== -->
+   <!--
+  <script src="js/utils.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+  -->
+</body>
+</html>
